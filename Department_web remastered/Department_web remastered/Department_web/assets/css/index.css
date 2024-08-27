@@ -1,0 +1,311 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    color: #5c528f;
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+.icon {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .icon {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    padding: 10PX;
+
+
+}
+
+.header .logo img {
+    width: 60px;
+    transition: transform 0.5s ease;
+
+}
+
+.logo img:hover {
+    filter: drop-shadow(1px 1px 2px #d4d807);
+    transform: rotateY(360deg);
+
+}
+
+.logo h2 {
+    color: rgb(12, 7, 147);
+    font-size: 20px;
+}
+
+.subnav {
+    padding: 8px;
+    color: rgb(250, 250, 250);
+    text-align: center;
+    margin-top: 1px;
+
+    background: linear-gradient(to right, rgb(3, 3, 72), blue);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+
+}
+
+.subnav h2 {
+    font-size: 25px;
+    padding: 10px;
+
+
+}
+
+/* navbar-starts */
+nav {
+    padding: 15px;
+
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 50px;
+}
+
+.menu a {
+    color: rgb(189, 186, 186);
+}
+
+/* navbar-ends */
+
+/* carousel-starts  */
+
+.caro-img {
+    height: 500px;
+
+
+}
+
+/* carousel-ends  */
+
+
+/* about-us-starts */
+/* about-us-starts */
+.aboutus {
+    text-align: center;
+    margin-top: 50px;
+    background-color: #ffffff;
+}
+
+.aboutus h2 {
+    color: rgb(40, 40, 177);
+    font-size: 30px;
+    font-weight: bolder;
+
+}
+
+.aboutus p {
+    text-align: justify;
+    padding: 30px;
+}
+
+.aboutus img {
+
+    width: 300px;
+    max-width: 100%;
+    /* Ensure the image doesn't overflow on smaller screens */
+}
+
+.aboutlogo {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: rgb(250, 250, 252);
+    margin: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+    .aboutus {
+        margin: 20px;
+        /* Reduce margin for smaller screens */
+    }
+
+    .aboutlogo {
+        flex-direction: column;
+        /* Ensure column layout on smaller screens */
+        text-align: center;
+        /* Center align the text on smaller screens */
+    }
+
+    .aboutus img {
+        width: 100%;
+        /* Make the image responsive */
+        max-width: 300px;
+        /* Ensure the image doesn't become too large */
+    }
+
+    .aboutlogo p {
+        margin-top: 20px;
+        /* Add some space between the image and text */
+        padding: 0 20px;
+        /* Add some padding for better readability on smaller screens */
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+/* about-us-ends */
+
+
+/* vision-mission-starts */
+.conatiner {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 40px;
+    margin: 0 10%;
+
+}
+
+.conatiner img {
+    width: 200px;
+    height: 50%;
+    max-width: 100%;
+    /* Ensure the image doesn't overflow on smaller screens */
+
+}
+
+.mission {
+    border: 2px solid green;
+
+}
+
+.mission:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.vission {
+    border: 2px solid rgb(11, 30, 126);
+
+}
+
+.vission:hover {
+    box-shadow: rgba(51, 14, 185, 0.35) 0px 5px 15px;
+}
+
+.abhead {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(10, 24, 123);
+
+}
+
+span {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(199, 11, 164);
+}
+
+@media screen and (max-width: 768px) {
+    .conatiner {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
+
+
+/* vision-mission-ends */
+
+.container-3 {
+    padding: 17px;
+    background-color: rgb(4, 4, 4);
+    margin: 10px;
+    height: 400px;
+}
+
+/* .container-3 .foot{
+    border: solid 1px;
+    border-color: azure;
+} */
+.container-3 h4,
+ul {
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Background color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #007bff;
+    /* Background color of the scrollbar thumb */
+    border-radius: 6px;
+    /* Rounded corners of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0056b3;
+    /* Color of the scrollbar thumb on hover */
+}
+
+/* Existing styles... */
+
+/* Custom scrollbar styles for WebKit browsers */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fafafa;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fcfcfc;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #cdcdcd;
+}
+
+/* For Firefox */
+html {
+    scrollbar-width: thin;
+    /* Possible values: auto, thin, none */
+    scrollbar-color: #5c528f white;
+    /* Thumb color and track color */
+}
